@@ -81,10 +81,7 @@ class IndexPage extends React.Component {
     const { home } = this.props;
     return (
       <Layout>
-        <Content style={{
-          background: "#fff", padding: 24, margin: 0, minHeight: 280
-        }}
-        >
+        <Content>
           <div className="welcome" />
           <h1>
             Welcome&nbsp;

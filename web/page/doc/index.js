@@ -9,10 +9,7 @@ const { TreeNode, DirectoryTree } = Tree;
 
 const PageDoc = () => (
   <Layout>
-    <Content style={{
-      background: "#fff", padding: 24, margin: 0, minHeight: 280
-    }}
-    >
+    <Content>
       <h1>
         骨架项目使用文档
       </h1>
