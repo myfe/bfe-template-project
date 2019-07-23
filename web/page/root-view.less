@@ -1,0 +1,191 @@
+@import "../asset/css/global.less";
+@import "../asset/css/variable.less";
+
+.layout-default {
+  background: @bg-color-normal;
+  font-weight: 400;
+  min-height: 100%;
+
+  .layout-logo {
+    background: @color-primary;
+    line-height: .64rem;
+    padding: .32rem;
+    text-align: center;
+    font-size: @text-size-logo;
+    font-family: "PingFang-SC-Semibold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1.title {
+      margin: 0;
+      font-size: 0.48rem;
+      font-weight: bold;
+    }
+    * {
+      color: @color-white;
+    }
+    .icon-logo {
+      font-size: .4rem;
+      margin-right: .2rem;
+    }
+    img {
+      vertical-align: bottom;
+      margin-right: .2rem;
+    }
+  }
+  .layout-sider {
+    background: #2a3647;
+    color: @color-white;
+    overflow-y: auto;
+  }
+  .layout-header {
+    position: fixed;
+    top: 0;
+    left: 4.4rem;
+    right: 0;
+    z-index: 3;
+    background: @color-white;
+    border-bottom: @border-normal;
+    padding: 0 .6rem 0 0;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    box-shadow: 0 0.04rem .12rem rgba(0, 0, 0, 5%);
+    z-index: 99;
+
+    .flab-entrance {
+      border-right: 0.02rem solid @spliter-color-normal;
+      padding-right: 0.4rem;
+      margin-right: 0.4rem;
+    }
+  }
+
+  .layout-content {
+    padding-top: 1.28rem;
+    background: @bg-color-normal!important;
+  }
+
+  .layout-breadcrumb {
+    margin-bottom: .4rem;
+  }
+  .layout-main {
+    & > header {
+      background: @color-white;
+      border-bottom: @border-normal;
+      padding: .6rem;
+      h1 {
+        margin-bottom: .28rem;
+      }
+      p {
+        color: @color-gray;
+      }
+    }
+    & > section {
+      padding: .4rem .6rem;
+    }
+  }
+  .layout-section {
+    margin-bottom: .4rem;
+    background: @color-white;
+    border: @border-normal;
+    border-radius: @border-radius-section;
+    & > header {
+      height: 1.12rem;
+      line-height: 1.12rem;
+      padding: 0 .4rem;
+      position: relative;
+      border-bottom: @spliter-normal;
+      .ant-btn {
+        position: absolute;
+        right: .4rem;
+        top: .28rem;
+        font-size: .24rem;
+        .iconfont {
+          margin-right: .08rem;
+          font-size: .28rem;
+        }
+      }
+    }
+    & > .ant-tabs {
+      .ant-tabs-tab {
+        padding: .4rem;
+        font-size: @text-size-subtitle;
+        font-weight: 700;
+        color: @color-normal;
+        &:hover {
+          color: @color-primary-hover;
+        }
+      }
+      .ant-tabs-tab-active {
+        color: @color-primary;
+      }
+      .ant-tabs-bar {
+        margin-bottom: 0;
+        .ant-tabs-nav-scroll {
+          padding-left: .4rem;
+        }
+      }
+      .ant-tabs-ink-bar {
+        background: @color-primary;
+        height: .06rem;
+      }
+    }
+    & > section {
+      padding: .4rem;
+    }
+
+    &-part {
+      h3 {
+        font-size: @text-size-subtitle;
+        margin: .6rem 0 .4rem 0;
+        font-weight: 700;
+        border-left: @color-primary .06rem solid;
+        padding: 0 0 0 .2rem;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .layout-footer {
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: @color-gray;
+    a{
+      color: @color-gray;
+    }
+    .icon-logo {
+      font-size: 0.4rem;
+      line-height: 1.26rem;
+    }
+  }
+
+  // other
+  .empty-view {
+    text-align: center;
+    padding: 1.6rem;
+    color: @color-gray;
+    h2 {
+      font-size: @text-size-subtitle;
+      margin-bottom: .6rem;
+      color: @color-gray;
+      font-weight: 300;
+    }
+    p {
+      font-size: @text-size-small;
+    }
+    li {
+      line-height: 2em;
+    }
+  }
+  .loading-view {
+    text-align: center;
+    padding: 1.6rem;
+    color: @color-gray;
+
+    .ant-spin {
+      margin-right: .2rem;
+    }
+  }
+}

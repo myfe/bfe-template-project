@@ -1,0 +1,76 @@
+@import "../../../asset/css/variable.less";
+
+.layout-sider {
+  background-color: #36425d !important;
+  .ant-menu {
+    padding-top: .2rem;
+    background-color: #2c384f !important;
+  }
+  .ant-menu-sub {
+    padding-top: 0;
+  }
+  .ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub {
+    // background: inherit;
+    box-shadow: none;
+    .ant-menu-item {
+      margin: 0;
+      height: 1rem;
+      line-height: 1rem;
+      font-size: .32rem;
+      font-weight: 300;
+      border-left: 4px solid #2a3647;
+      a {
+        box-sizing: border-box;
+        height: 1rem;
+        line-height: 1rem;
+      }
+      .anticon {
+        font-size: .32rem;
+      }
+    }
+    .ant-menu-item-selected {
+      background-color: #475263;
+      border-left: 3px solid @color-primary;
+    }
+    .ant-menu-submenu {
+      .ant-menu-item {
+        font-size: .28rem;
+      }
+    }
+    .ant-menu-submenu-title {
+      border-left: 4px solid #36425d;
+      background-color: #36425d;
+      line-height: .88rem;
+      margin: 0;
+      height: 1rem;
+      font-size: .32rem;
+      font-weight: 300;
+      color: #999fa8;
+      .iconfont {
+        margin-right: .16rem;
+        font-size: .48rem;
+        top: .04rem;
+        position: relative;
+      }
+    }
+  }
+
+  .ant-menu-dark .ant-menu-sub {
+    & > .ant-menu-item {
+      a {
+        line-height: .8rem;
+      }
+    }
+  }
+
+  .ant-menu > .ant-menu-item {
+    padding-left: .3rem!important;
+  }
+  .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title {
+    padding-left: .3rem!important;
+  }
+  .ant-menu-sub > .ant-menu-item {
+    padding-left: .96rem!important;
+  }
+}

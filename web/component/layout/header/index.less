@@ -1,0 +1,36 @@
+@import "../../../asset/css/variable.less";
+
+.layout-header {
+  &-title {
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    font-size: .36rem;
+    h1 {
+      color: @text-color;
+    }
+  }
+
+  &-content {
+    flex: 1;
+    text-align: left;
+    padding-right: .4rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &-user {
+    text-align: right;
+    font-size: .32rem;
+    .component-user-avatar {
+      margin-left: .4rem;
+    }
+  }
+  .anticon {
+    margin-left: .16rem;
+  }
+  .ant-dropdown-trigger {
+    cursor: pointer;
+    display: inline-block;
+  }
+}
