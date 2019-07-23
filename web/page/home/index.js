@@ -102,7 +102,6 @@ class IndexPage extends React.Component {
               extra={
                 <Button type="link" onClick={this.onRefreshEnv}> 刷新 </Button>
               }
-              style={{ marginBottom: 30 }}
             >
               环境：
               { home.get('env') }
