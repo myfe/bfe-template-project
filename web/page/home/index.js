@@ -30,11 +30,11 @@ class IndexPage extends React.Component {
   }
 
   componentWillMount() {
-    homeMeta.dispatchAction(homeMeta.ACTION_TYPES.fetchEnv, {});
+    // homeMeta.dispatchAction(homeMeta.ACTION_TYPES.fetchEnv, {});
   }
 
   onRefreshEnv() {
-    homeMeta.dispatchAction(homeMeta.ACTION_TYPES.fetchEnv, {});
+    // homeMeta.dispatchAction(homeMeta.ACTION_TYPES.fetchEnv, {});
   }
 
   onInputChange(e) {
